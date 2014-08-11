@@ -3,11 +3,29 @@ layout: page
 title: Home Page
 tagline: welcome 欢迎
 ---
+
 {% include JB/setup %}
+
+{% assign preview_limit=5 %}
+
+{% for post in site.posts limit:preview_limit %}
+<div class="blog-index">  
+
+<h2 class="entry-title">
+{% if post.title %}
+    <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+{% endif %}
+</h2>
+<div class="entry-content">{{ post.content }}</div>
+</div>
+----
+{% endfor %}
+
+{% if site.posts.size > preview_limit %}
+<h2> Other posts <h2>
 <ul class="posts">
-  {% for post in site.posts %}
+  {% for post in site.posts offset:preview_limit %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-
-
+{% endif %}
