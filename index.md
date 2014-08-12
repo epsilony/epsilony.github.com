@@ -7,16 +7,25 @@ tagline: welcome 欢迎
 {% include JB/setup %}
 
 {% assign preview_limit=5 %}
+{% assign preview_words=100 %}
 
 {% for post in site.posts limit:preview_limit %}
 <div class="blog-index">  
-
-<h2 class="entry-title">
-{% if post.title %}
-    <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
-{% endif %}
-</h2>
-<div class="entry-content">{{ post.content }}</div>
+    <h2 class="entry-title">
+        {% if post.title %}
+            <a href="{{ root_url }}{{ post.url }}">{{ post.title }} </a>
+        {% endif %}
+    </h2>
+<div class="entry-content">
+    {% if post.content contains '<!--more-->' %}
+        {{ post.content | split:'<!--more-->' | first }}
+    {% else %}
+        {{ post.excerpt }}
+    {% endif %}
+</div>
+    {% if post.title %}
+        <a href="{{ root_url }}{{ post.url }}">read more</a>
+    {% endif %}
 </div>
 ----
 {% endfor %}
