@@ -2,8 +2,8 @@
 layout: post
 title: "Gradle DSL X Groovy"
 description: "关于解读Gradle DSL的一些想法"
-category: 
-tags: [Gradle, Groovy, Gradle DSL]
+category: [programming language compare, build automation tool, 编程语言比较, 自动化构建] 
+tags: [Gradle, Groovy, Gradle DSL, Python]
 ---
 {% include JB/setup %}
 一个常用Python和Java的人可能会在最初接手Gradle的一刹那感到困惑。如果完全没有Groovy的知识，正常人会觉得手头上的build.gradle是一个怪异的标记型语言。如果碰巧你又是个前端开发者，说不定会有一种HTML嵌Javascript的幻觉。
