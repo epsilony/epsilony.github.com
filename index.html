@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      
+        Home Page - 
+      
+      Blog of Man YUAN
+    </title>
+    <meta property="wb:webmaster" content="120ea6fec4d25da6" />   
+    <meta name="author" content="Man YUAN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="/assets/themes/hooligan/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css">
+    <link href="/assets/themes/hooligan/css/pygments.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/hooligan/css/darkstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/hooligan/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+    
+   <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+  </head>
+
+  <body>
+    <div id="page-wrap">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+
+            <a class="brand" href="/">Blog of Man YUAN</a>
+
+            <div class="nav-collapse">
+              <ul class="nav">
+                
+                
+                
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+              </ul>
+              <ul class="nav pull-right social visible-desktop">
+                <li class="divider-vertical"></li>
+                
+                <li>
+                  <a href="https://github.com/epsilony" class="zocial github icon" target="_blank">
+                    <span class="hidden-desktop">Github</span>
+                  </a>
+                </li>
+                
+                
+                
+                <li>
+                  <a href="https://twitter.com/epsilonyuan" class="zocial twitter icon" target="_blank">
+                    <span class="hidden-desktop">Twitter</span>
+                  </a>
+                </li>
+                
+                
+                
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="content">
+          
+<div class="page-header-wrapper">
+	<div class="page-header">
+  		<h1>Home Page  <small>welcome 欢迎</small></h1>
+  	</div>
+</div>
+
+<div class="row">
+  <div class="span12">
+    <meta property="wb:webmaster" content="120ea6fec4d25da6" />
+
+<div class="blog-index">  
+    <h2 class="entry-title">
+        
+            <a href="/2014/08/12/use-360-cdn">使用360网站卫士CDN加速本blog的加载 </a>
+        
+    </h2>
+<div class="entry-content">
+    
+        
+<p>你懂的，由于众于周知的原因，这个blog打开的速度很慢。由于翻墙什么的毕竟不方便啊，所以我还是优先照顾我朝的公民我吧。</p>
+
+<p>其实只是需要把 <code>googleapis.com</code> 替换为 <code>useso.com</code> (包括<code>fonts.googleapis.com</code>和<code>ajax.googleapis.com</code>)就OK了。</p>
+
+<h2 id="section">具体方法如下</h2>
+
+    
+</div>
+    
+        <a href="/2014/08/12/use-360-cdn">read more</a>
+    
+</div>
+<hr />
+
+<div class="blog-index">  
+    <h2 class="entry-title">
+        
+            <a href="/2014/08/11/gradle-dsl-vs-groovy">Gradle DSL X Groovy </a>
+        
+    </h2>
+<div class="entry-content">
+    
+        
+<p>一个常用Python和Java的人可能会在最初接手Gradle的一刹那感到困惑。如果完全没有Groovy的知识，正常人会觉得手头上的build.gradle是一个怪异的标记型语言。如果碰巧你又是个前端开发者，说不定会有一种HTML嵌Javascript的幻觉。</p>
+
+<div class="highlight"><pre><code class="language-groovy" data-lang="groovy"><span class="n">task</span> <span class="n">helloWorld</span> <span class="o">{</span>
+	<span class="n">ext</span><span class="o">.</span><span class="na">world</span><span class="o">=</span><span class="s2">&quot;world&quot;</span>
+	<span class="n">println</span> <span class="s2">&quot;it&#39;s a configure closure&quot;</span>
+<span class="o">}</span>
+
+<span class="n">helloWorld</span> <span class="o">&lt;&lt;</span> <span class="o">{</span>
+	<span class="n">println</span> <span class="s2">&quot;hello $world&quot;</span>
+	<span class="n">println</span> <span class="s2">&quot;it&#39;s an action closure&quot;</span>
+<span class="o">}</span></code></pre></div>
+
+<p>事实上，某有点半调子lisp基础的人一开始完全没有发现Gradle DSL竟然和lisp非常相似。</p>
+
+<p>我猜一些拿Gradle当Maven用的人应该就是觉得Gradle DSL是一种嵌入可执行脚本的，插件形式比较小清新的东西而已。当然，会有人一直以为Maven就是个Jar的下载管理器。</p>
+
+<p><em>但是</em> Gradle DSL 就是一种硬正（南京话EN ZEN!)的图灵完全语言，其几乎等价于Groovy，只是通过Groovy所支持的机制加了若干“语法”糖而已。甚至，如果直说Gradle DSL script就是Groovy script，那其实也是不能算错的。</p>
+
+<p>而Groovy的灵活性正是Gradle的真正卖点，这绝不是一小措图灵不全的标记语言所能比拟的。任何说Gradle DSL是标记语言，或一部为标记一部为过程语言的，以及是两种语言的混合的反动观点都是某所反对的。</p>
+
+<p>Gradle的文档很不错，但对于Groovy和Gradle DSL的关系，可能是出于不解释让你用用你就明白的心态，并不直接详说。然而如果Groovy道行不深（Groovy的主页域名都不舍得买，你说多少人道行会深！），错把Gradle DSL看做一门掺混了Groovy的新语言去学，那是会浪费时间和精力的。</p>
+
+<p>要说手上的<code>build.gradle</code>为什么就好比 Python/Java8/lisp 的东西，以及为什么是Groovy而不是Python（神一样的lisp凡人就不要用了），那么就得知道Groovy和Gradle的几个性质，其实某初接触Groovy时，还曾觉得其中一个相当坑爹…</p>
+
+
+    
+</div>
+    
+        <a href="/2014/08/11/gradle-dsl-vs-groovy">read more</a>
+    
+</div>
+<hr />
+
+<div class="blog-index">  
+    <h2 class="entry-title">
+        
+            <a href="/2014/08/11/a-new-blog">新的一天，新的Blog </a>
+        
+    </h2>
+<div class="entry-content">
+    
+        
+<h2 id="section">起因</h2>
+<p>burst.net在收了一年的费用后，胜利闭幕了！(耳中传来刺耳的高音喇叭声：burst.net的老板带着xxx跑路了，留下一月的Hotwinds……）</p>
+
+<p>旧日里都是拖个dropbox作备份，都懒得去碰那个hotwinds，觉得旧的东西还是就放在那儿吧，不想迁移了，个人还是不太爱php，估计以后也不会再用wordpress做blog了。</p>
+
+<p>对markdown的偏爱，对MathJax的重度依赖(<script type="math/tex">\LaTeX</script> <script type="math/tex">\int_{-1}^1 f(x) dx </script> 这里是测试)，基于文件的天生的版本控制，免费……。总之，一个常用github的\苦屄\无钱\时间紧\屁事多的个人如果不挂个blog在这里简直对不起生活啊。</p>
+
+
+    
+</div>
+    
+        <a href="/2014/08/11/a-new-blog">read more</a>
+    
+</div>
+<hr />
+
+
+  </div>
+</div>
+
+
+        </div>
+      </div> <!-- /container -->
+
+      <div class="footer-push"></div>
+    </div><!--/.page-wrap -->
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2014 Man YUAN
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://github.com/dhulihan/hooligan" target="_blank">The Hooligan Theme</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.useso.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/assets/themes/hooligan/js/jquery.min.js"><\/script>')</script>
+    <script src="/assets/themes/hooligan/bootstrap/js/bootstrap.min.js"></script>
+
+    
+  </body>
+</html>
+
