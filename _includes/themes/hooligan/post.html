@@ -1,12 +1,16 @@
+<!-- for Blog of Man YUAN: -->
+{% assign app_key="3330437770" %}
+{% assign relate_uid="1736280557" %}
+
 <div class="page-header">
   <h1>
     {{ page.title }} 
     {% if page.tagline %}
       <small>{{ page.tagline }}</small>
     {% endif %}
+    
   </h1>
 </div>
-
 <div class="row">
   <div class="span8">
     {{ content }}
@@ -22,13 +26,20 @@
         <a class="btn next" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a>
       {% else %}
         <a class="btn next disabled">Next &rarr;</a>
-      {% endif %}
+      {% endif %}   
+      <!-- for Blog of Man YUAN: -->
+      <wb:share-button type="button" appkey="{{ app_key }}" count="n" language="zh_cn" size="big" default_text={{ page.title }} ralateUid="{{ relate_uid }}"></wb:share-button>
     </div>
     <hr>
+    
     {% include JB/comments %}
   </div>
   
   <div class="span4">
+    <section>
+    <!-- for Blog of Man YUAN: -->
+    <wb:share-button appkey="{{ app_key }}" count="n" type="button" language="zh_cn" size="big" default_text={{ page.title }} ralateUid="{{ relate_uid }}"></wb:share-button>
+    </section>
     <section>
       <h4>Published</h4>
       <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>

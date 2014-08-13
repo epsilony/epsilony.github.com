@@ -3,7 +3,6 @@ layout: page
 title: Home Page
 tagline: welcome 欢迎
 ---
-<meta property="wb:webmaster" content="120ea6fec4d25da6" />
 {% include JB/setup %}
 
 {% assign preview_limit=5 %}
