@@ -58,7 +58,10 @@
                 {% assign group = 'navigation' %}
                 {% include JB/pages_list %}
               </ul>
+              <!--
               <ul class="nav pull-right social visible-desktop">
+              -->
+              <ul class="nav social visible-desktop">
                 <li class="divider-vertical"></li>
                 {% if site.author.github %}
                 <li>
@@ -119,8 +122,19 @@
 
     <footer>
       <div class="container">
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+        <p>
+        &copy; {{ site.time | date: '%Y' }} {{ site.author.name }} 
+                {% if site.author.github %}
+                  <a href="https://github.com/{{ site.author.github }}" target="_blank">
+                    <span>(My Github)</span>
+                  </a>
+                {% endif %}
+        </p>
+        <p>
+        <wb:follow-button uid="1736280557" type="red_1" width="67" height="24" ></wb:follow-button>
+        </p>
+        <p>
+          With help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://github.com/dhulihan/hooligan" target="_blank">The Hooligan Theme</a>
         </p>
       </div>
