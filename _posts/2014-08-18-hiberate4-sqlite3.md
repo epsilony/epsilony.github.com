@@ -9,7 +9,7 @@ tags: [sqlite3, hibernate4, xerial sqlite driver, hibernate sqlite dialect]
 
 这几天在用hibernate 4 X sqlite 3，遇到了一些意外的麻烦
   + hibernate dialect 相关api的变动
-  + Xerial 的 org.sqlite.JDBC 3.8.5-pre1 的bug导致sql syntax error
+  + Xerial 的 org.sqlite.JDBC 3.8.5-pre1/3.7.15-M1 的bug导致sql syntax error
 
 ### 可用的sqlite3的hibernate4方言
 基本上目前所有的sqlite3 hibernate方言有三个开源的来源，其中 _没有一个_ 可以拿来直接用。
@@ -20,9 +20,10 @@ dialect见尾附
 
 <!--more-->
 
-### 目前的Xerial的3.8.5-pre1的问题
+### 目前的Xerial的3.8.5-pre1/3.7.15-M1的问题
 
-结论是：除非想提交试用BUG，否则不要碰他，就用上一稳定版本的就OK了。问题出在 table meta data 的提取出了问题。
+主要是org.sqlite 有关table index的实现出现的问题。
+结论是：除非想提交试用BUG，否则不要碰他，就用上一稳定版本的3.7.2就OK了。问题出在 table meta data 的提取出了问题。
 
 
 ----
