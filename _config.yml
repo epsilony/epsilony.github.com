@@ -9,6 +9,11 @@ highlighter: 'pygments'
 markdown: kramdown
 #paginate: 5
 
+# settings for rss (NOTE, not for Themes,the settings below are very narrow effecting
+name: Blog of Man YUAN
+description: Personal blog, not only techs
+url: http://epsilony.net
+
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
@@ -129,4 +134,5 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  
+
+
