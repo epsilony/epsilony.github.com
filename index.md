@@ -8,6 +8,10 @@ tagline: welcome 欢迎
 {% assign preview_limit=5 %}
 {% assign preview_words=100 %}
 
+<a href="feed.xml">
+<img src="{{ ASSET_PATH }}hooligan/images/rss.gif" width="36" height="14">
+</a>
+
 <div class="blog-index">  
 {% for post in site.posts limit:preview_limit %}
     <h2 class="entry-title">
